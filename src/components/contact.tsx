@@ -92,33 +92,36 @@ export const Contact = () => {
     setLoading(true);
 
     // send email
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_SERVICE_ID,
-        import.meta.env.VITE_APP_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Shubham",
-          from_email: form.email.trim().toLowerCase(),
-          to_email: import.meta.env.VITE_APP_EMAILJS_RECIEVER,
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_KEY,
-      )
-      .then(() => toast.success("Thanks for contacting me."))
-      .catch((error) => {
-        // Error handle
-        console.log("[CONTACT_ERROR]: ", error);
-        toast.error("Something went wrong.");
-      })
-      .finally(() => {
-        setLoading(false);
-        setForm({
-          name: "",
-          email: "",
-          message: "",
-        });
-      });
+  emailjs
+  .send(
+    import.meta.env.VITE_APP_SERVICE_ID,
+    import.meta.env.VITE_APP_TEMPLATE_ID,
+    {
+      name: form.name,
+      email: form.email,
+      message: form.message,
+    },
+    import.meta.env.VITE_APP_EMAILJS_KEY,
+  )
+  .then(() => {
+    toast.success("Message sent successfully ✅");
+  })
+  .catch((error) => {
+    console.log("[CONTACT_ERROR]: ", error);
+
+    // 👇 Smart fallback message
+    toast.error(
+      "Message send nahi ho paya 😔. Please thodi der baad try kare ya direct email kare."
+    );
+  })
+  .finally(() => {
+    setLoading(false);
+    setForm({
+      name: "",
+      email: "",
+      message: "",
+    });
+  });
   };
 
   return (

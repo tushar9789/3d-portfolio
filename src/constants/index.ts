@@ -1,6 +1,9 @@
 // Contains constant data for using in website
 // ! Don't remove anything from here if not sure
 
+
+
+
 import {
   mobile,
   backend,
@@ -23,6 +26,7 @@ import {
   tesla,
   shopify,
   threejs,
+  
   project1,
   project2,
   project3,
@@ -37,6 +41,7 @@ import {
   twitter,
   github,
 } from "../assets";
+
 
 // Navbar Links
 export const NAV_LINKS = [
@@ -58,7 +63,7 @@ export const NAV_LINKS = [
   {
     id: "source-code",
     title: "Source Code",
-    link: "http://www.github.com/sanidhyy/3d-portfolio",
+    link: "https://github.com/tushar9789/3d-portfolio",
   },
 ] as const;
 
@@ -142,10 +147,10 @@ export const TECHNOLOGIES = [
 export const EXPERIENCES = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    company_name: "Codec Technologies",
+    icon: null,  
+    iconBg: "#ffffff",
+    date: "March 2024 - April 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -153,25 +158,13 @@ export const EXPERIENCES = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+ 
   {
     title: "Web Developer",
     company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    icon: null,  
+    iconBg: "#ffffff",
+    date: "Jan 2023 - Jan 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -181,10 +174,10 @@ export const EXPERIENCES = [
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    company_name: "Augment Infotech Private Limited",
+    icon: null,  
+    iconBg: "#ffffff",
+    date: "March 2026 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -225,9 +218,9 @@ export const TESTIMONIALS = [
 // Projects
 export const PROJECTS = [
   {
-    name: "Disney+ Clone",
+    name: "Hotel Booking System",
     description:
-      "Disney+ is one of the biggest streaming platforms used by millions of people world-wide and allows us to stream high quality content in 4k and various other formats",
+      "Hotel Booking System is a modern web platform used by traveler worldwide and allows users to book rooms, explore hotel in realtime and manage reservation easily with a seamless Experiences ",
     tags: [
       {
         name: "react",
@@ -242,14 +235,14 @@ export const PROJECTS = [
         color: "pink-text-gradient",
       },
     ],
-    image: project1,
-    source_code_link: "https://github.com/sanidhyy/disney-clone",
-    live_site_link: "https://clonedisneyplus.web.app",
+    image: project1 ,
+    source_code_link: "https://github.com/tushar9789/hotel-booking-frontend",
+    live_site_link: "https://hotel-booking-frontend-p69p-five.vercel.app/",
   },
   {
-    name: "Golds Gym",
+    name: "Gocart",
     description:
-      "Web application that enables users to search for fitness exercises, effective personalized positions, and recommends new exercises based on their personal preferences.",
+      "GoCart is an ecommerce web application that enables users to browse products, manage carts efficiently and recommends relevant items based on their preferences for a smooth and personalized shopping experience.",
     tags: [
       {
         name: "react",
@@ -265,8 +258,8 @@ export const PROJECTS = [
       },
     ],
     image: project2,
-    source_code_link: "https://github.com/sanidhyy/fitness-app",
-    live_site_link: "https://fitness-gym-react.netlify.app",
+    source_code_link: "https://github.com/tushar9789/gocart-project",
+    live_site_link: "https://gocart-project.vercel.app/",
   },
   {
     name: "Shoppy",
@@ -287,53 +280,11 @@ export const PROJECTS = [
       },
     ],
     image: project3,
-    source_code_link: "https://github.com/sanidhyy/admin-dashboard",
+    source_code_link: "https://github.com/tushar9789/admin-dashboard",
     live_site_link: "https://shoppy-dashboard-react.netlify.app",
   },
-  {
-    name: "TikTok Clone",
-    description:
-      "A Next JS Web Application that enables users to upload videos of any length and size, create accounts and connect with other people just like any other social media.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project4,
-    source_code_link: "https://github.com/sanidhyy/tiktok-clone",
-    live_site_link: "https://tiktok-clone-react.vercel.app",
-  },
-  {
-    name: "Cryptoverse",
-    description:
-      "Best Cryptocurrency web application that allows users to view price, market cap and daily change in realtime for almost every cryptocurrency in the world.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rapidapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project5,
-    source_code_link: "https://github.com/sanidhyy/crypto-app",
-    live_site_link: "https://reactjscryptoapp.netlify.app",
-  },
+ 
+ 
   {
     name: "Travel Advisor",
     description:
@@ -353,7 +304,7 @@ export const PROJECTS = [
       },
     ],
     image: project6,
-    source_code_link: "https://github.com/sanidhyy/travel-advisor",
+    source_code_link: "https://github.com/tushar9789/travel-advisor",
     live_site_link: "https://travel-advisor-reactjs.netlify.app",
   },
 ] as const;
@@ -367,16 +318,12 @@ export const SOCIALS = [
   {
     name: "Linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/in/sanidhyy",
+    link: "https://www.linkedin.com/feed/",
   },
-  {
-    name: "Twitter",
-    icon: twitter,
-    link: "https://x.com/_sanidhyy",
-  },
+  
   {
     name: "GitHub",
     icon: github,
-    link: "https://github.com/sanidhyy",
+    link: "https://github.com/tushar9789",
   },
 ] as const;
